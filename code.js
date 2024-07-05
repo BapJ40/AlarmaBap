@@ -57,7 +57,6 @@ boton.addEventListener("click", () => {
     const horaPerro = `${horaSeleccionada}:${minutoSeleccionada}`;
     alarmasUser.push(horaPerro);
     localStorage.setItem("alarmasUser", JSON.stringify(alarmasUser));
-    abrirModal();
 })
 
 const tuAlarmas = document.querySelector(".tuAlarmas")
