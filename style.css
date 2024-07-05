@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+
+body{
+    background-color: #DDE9F3; 
+    /* color: #DDE9F3; */
+    
+}
+
+.encabezado {
+    background-color: #0069d9;
+    color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Rubik Mono One", sans-serif;
+    user-select: none;
+    font-size: 2.7em;
+}
+  
+  @media (max-width: 650px) {
+    .encabezado {
+      font-size: 2.4em;
+    }
+    
+  }
+  
+  @media (max-width: 502px) {
+    .encabezado {
+      font-size: 2em;
+    }
+  }
+  
+  @media (max-width: 424px) {
+    .encabezado {
+      font-size: 1.8em;
+    }
+  }
+
+.contenedorHora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 12rem;
+    font-family: "Kanit";
+    user-select: none;
+    padding-top: 5px;
+}
+
+@media (max-width: 650px) {
+    .contenedorHora{
+        font-size: 8rem;
+        padding-top: 0;
+        margin-top: 0;
+        user-select: none;
+    }
+}
+
+@media (max-width: 502px) {
+  .contenedorHora{
+    font-size: 6.5rem;
+    padding-top: 0;
+    margin-top: 0;
+    user-select: none;
+  }
+}
+
+@media (max-width: 424px) {
+  .contenedorHora{
+    font-size: 5.5rem;
+    padding-top: 0;
+    margin-top: 0;
+    user-select: none;
+  }
+}
+
+.Tituloopciones{
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: "Martian Mono";
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+}
+
+.label{
+ font-size: 1rem;
+ display: inline-block;
+}
+
+.opciones{
+    text-align: center;
+    /* font-size: 2.3rem; */
+    font-family: "Martian Mono";
+    user-select: none;
+}
+
+#horaSelect, #minutosSelect{
+    width: 200px;
+    font-family: "Kanit";
+    font-size: 1em;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;  
+    border-radius: 5px;
+}
+
+#horaSelect::-webkit-scrollbar, #minutosSelect::-webkit-scrollbar {
+  display: none; 
+}
+
+.opcionesdo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#boton{
+    margin: 20px 5px;
+    user-select: none;
+    font-family: "Martian Mono";
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background-color: #005bae;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.btnDetener{
+  margin: 20px 5px;
+  user-select: none;
+  font-family: "Martian Mono";
+  padding-bottom: 0;
+  margin-bottom: 5px;
+  cursor: pointer;
+  background-color: #FF7F00;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+@media (max-width: 650px) {
+  .Tituloopciones{
+    font-size: 1.5rem;
+  }
+
+  .opciones{
+    font-size: 1.5rem;
+  }
+
+  #horaSelect, #minutosSelect{
+    width: 150px;
+    font-size: 0.8em;
+  }
+
+  #boton{
+    font-size: 1rem;
+  }
+
+  .btnDetener{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 502px) {
+  .Tituloopciones{
+    font-size: 1.2rem;
+  }
+
+  .opciones{
+    font-size: 1.2rem;
+  }
+
+  #horaSelect, #minutosSelect{
+    width: 100px;
+    font-size: 0.8em;
+  }
+
+  #boton{
+    font-size: 1rem;
+  }
+
+  .btnDetener{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 424px) {
+  .Tituloopciones{
+    font-size: 1rem;
+  }
+
+  .opciones{
+    font-size: 1rem;
+  }
+
+  #horaSelect, #minutosSelect{
+    width: 80px;
+    font-size: 0.8em;
+  }
+
+  #boton{
+    font-size: 1rem;
+  }
+
+  .btnDetener{
+    font-size: 1rem;
+  }
+}
+
+.tuAlarmas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloAlarmas{
+    font-family: "Martian Mono";
+    font-size: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.alarmasUsuario{
+    font-family: "Kanit";
+    font-size: 1.5em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    user-select: none;
+}
+
+.ponerAlarma{
+    font-family: "Martian Mono";
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    user-select: none;
+    cursor: pointer;
+    color: #005bae;
+    border-radius: 5px;
+}
+
+#btnBorrar{
+    display: block;
+    margin: 0 auto;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.ocultar {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .tuAlarmas{
+    font-size: 1.5rem;
+  }
+
+  .tuAlarmas{
+    font-size: 1.5rem;
+  }
+
+  .alarmasUsuario{
+    font-size: 1.2rem;
+  }
+
+  .ponerAlarma{
+    font-size: 1.2rem;
+  }
+
+  #btnBorrar{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 502px) {
+  .tuAlarmas{
+    font-size: 1.2rem;
+  }
+
+  .tituloAlarmas{
+    font-size: 1.5rem;
+  }
+
+  .alarmasUsuario{
+    font-size: 1rem;
+  }
+
+  .ponerAlarma{
+    font-size: 1rem;
+  }
+
+  #btnBorrar{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 424px) {
+
+  .tuAlarmas{
+    font-size: 1rem;
+  }
+
+  .tituloAlarmas{
+    font-size: 1.3rem;
+  }
+
+  .alarmasUsuario{
+    font-size: 1rem;
+  }
+
+  .ponerAlarma{
+    font-size: 1rem;
+  }
+
+  #btnBorrar{
+    font-size: 1rem;
+  }
+}
+
