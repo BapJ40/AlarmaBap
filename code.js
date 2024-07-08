@@ -67,7 +67,7 @@ alarmasUser.forEach((horaAlarmas, IndexAlarmas) => {
     alarmasUsuario.classList.add("alarmasUsuario")
     alarmasUsuario.textContent = horaAlarmas;
     const volverAPoner = document.createElement("button")
-    volverAPoner.textContent = "Poner Alarma denuevo"
+    volverAPoner.textContent = "Poner Alarma de nuevo"
     volverAPoner.classList.add("ponerAlarma")
     alarmasUsuario.setAttribute("id", IndexAlarmas)
     volverAPoner.setAttribute("onclick", `volverAponer(${IndexAlarmas})`)
