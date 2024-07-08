@@ -91,15 +91,17 @@ if (alarmasUsuarioExist) {
 const botonBorrar = document.querySelector("#btnBorrar")
 
 botonBorrar.addEventListener("click", () => {
-    localStorage.removeItem("alarmasUser")
-    const tuAlarmas = document.querySelector(".tuAlarmas")
-    tuAlarmas.textContent = ""
+    localStorage.removeItem("alarmasUser");
+    const tuAlarmas = document.querySelector(".tuAlarmas");
+    tuAlarmas.textContent = "";
+    document.location.reload()
 })
 
 function volverAponer(indiceAlarma) {
     const horaAlarma = JSON.parse(localStorage.getItem("alarmasUser"))[indiceAlarma]
-    const horaAlarma2 = horaAlarma.slice(0,1).padStart(2,'0')
-    const minutoAlarma = horaAlarma.slice(2,4).padStart(2,'0')
+    const horaAlarma2 = parseInt(horaAlarma.slice(0,2))
+    const minutoAlarma = parseInt(horaAlarma.slice(3,5))
     horaSeleccionada = horaAlarma2
     minutoSeleccionada = minutoAlarma
+    console.log(horaSeleccionada, minutoSeleccionada)
 }
